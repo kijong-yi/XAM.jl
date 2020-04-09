@@ -10,6 +10,12 @@
 > This project follows the [semver](http://semver.org) pro forma and uses the [git-flow branching model](https://nvie.com/posts/a-successful-git-branching-model/ "original
 blog post").
 
+## Personal modifications by kjyi
+This is a modified julia package for personal convenience. Following functions are added. Nothing is changed in other parts.
+`inferquerylength(record::Record)::Int` is same function with pysam `infer_query_length()`, which calculate CIGAR string sum except hardclipped bases.
+`isunmapped(record)` returns `!ismapped(record)`
+
+
 ## Description
 XAM provides I/O and utilities for manipulating SAM and BAM formatted alignment map files.
 
