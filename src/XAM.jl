@@ -2,7 +2,8 @@ module XAM
 
 export
     SAM,
-    BAM
+    BAM,
+	BAM.ismapped
 
 include("sam/sam.jl")
 include("bam/bam.jl")
